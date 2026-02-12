@@ -28,7 +28,7 @@ app.post("/ask", async (req, res) => {
 
     // ✅ Gemini Response
     const response = await ai.models.generateContent({
-      model: "gemini-1.5-flash", // stable model for deployment
+      model: "gemini-2.0-flash", // stable model for deployment
       contents: userQuestion,
       config: {
         systemInstruction: `
