@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Instructor AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">Code Mentor<br><span>AI</span></h2>
+
+    <nav>
+      <a class="active" href="#">🏠 Dashboard</a>
+      <a href="#">🕘 History</a>
+      <a href="#">📘 Tutorials</a>
+      <a href="#">💻 Playground</a>
+      <a href="#">⚙ Settings</a>
+    </nav>
+
+    <p class="footer">Code Mentor AI v2.0<br>Powered by Gemini API</p>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Header -->
+    <header class="topbar">
+      <h1>Coding Instructor AI</h1>
+      <div class="buttons">
+        <button>🌙 Dark Mode</button>
+        <button>👤 Profile</button>
+      </div>
+    </header>
+
+    <!-- Dashboard Cards -->
+    <section class="cards">
+
+      <div class="card">
+        <h3>1,248</h3>
+        <p>Questions Solved</p>
+      </div>
+
+      <div class="card">
+        <h3>24</h3>
+        <p>Languages</p>
+      </div>
+
+      <div class="card topics">
+        <h3>🔥 Popular Topics</h3>
+        <ul>
+          <li>JavaScript Closures</li>
+          <li>Python Decorators</li>
+          <li>React Hooks</li>
+          <li>Recursion Patterns</li>
+          <li>Async/Await</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Ask Question Box -->
+    <section class="ask-box">
+      <h2>❓ Ask a Coding Question</h2>
+
+      <p class="text">
+        Ask any DSA-related question. The AI will respond with explanation,
+        approach, code, and complexity.
+      </p>
+
+      <textarea id="question" placeholder="Type your DSA question here..."></textarea>
+
+      <button id="askBtn">Ask AI</button>
+
+      <div id="responseBox"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
