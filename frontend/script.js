@@ -8,12 +8,9 @@ document.getElementById("askBtn").addEventListener("click", async () => {
 
   document.getElementById("responseBox").innerHTML = "⏳ Thinking...";
 
-  // Send request to backend
   const res = await fetch("/ask", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ question }),
   });
 
